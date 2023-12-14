@@ -32,19 +32,19 @@ export default Controller.extend({
               link: 'i-i-s-probatri-контрагент-l',
               caption: i18n.t('forms.application.sitemap.заказы.справочники.i-i-s-probatri-контрагент-l.caption'),
               title: i18n.t('forms.application.sitemap.заказы.справочники.i-i-s-probatri-контрагент-l.title'),
-              icon: 'paperclip',
+              icon: 'chart line',
               children: null
             }, {
               link: 'i-i-s-probatri-мастер-l',
               caption: i18n.t('forms.application.sitemap.заказы.справочники.i-i-s-probatri-мастер-l.caption'),
               title: i18n.t('forms.application.sitemap.заказы.справочники.i-i-s-probatri-мастер-l.title'),
-              icon: 'folder open',
+              icon: 'address card',
               children: null
             }, {
               link: 'i-i-s-probatri-номенклатура-l',
               caption: i18n.t('forms.application.sitemap.заказы.справочники.i-i-s-probatri-номенклатура-l.caption'),
               title: i18n.t('forms.application.sitemap.заказы.справочники.i-i-s-probatri-номенклатура-l.title'),
-              icon: 'tasks',
+              icon: 'table',
               children: null
             }]
           }, {
@@ -55,13 +55,13 @@ export default Controller.extend({
               link: 'i-i-s-probatri-заказ-l',
               caption: i18n.t('forms.application.sitemap.заказы.документация.i-i-s-probatri-заказ-l.caption'),
               title: i18n.t('forms.application.sitemap.заказы.документация.i-i-s-probatri-заказ-l.title'),
-              icon: 'archive',
+              icon: 'address card',
               children: null
             }, {
               link: 'i-i-s-probatri-журнал-заказов-l',
               caption: i18n.t('forms.application.sitemap.заказы.документация.i-i-s-probatri-журнал-заказов-l.caption'),
               title: i18n.t('forms.application.sitemap.заказы.документация.i-i-s-probatri-журнал-заказов-l.title'),
-              icon: 'tasks',
+              icon: 'book',
               children: null
             }]
           }]

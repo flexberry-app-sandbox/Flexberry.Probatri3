@@ -70,11 +70,12 @@ export let defineProjections = function (modelClass) {
     }, { index: 4, displayMemberPath: 'контрагент' }),
     итог: attr('Итог', { index: 6 }),
     расчетЗаказа: hasMany('i-i-s-probatri-расчет-заказа', 'Расчет заказа', {
-      количество: attr('Количество', { index: 0 }),
-      сумма: attr('Сумма', { index: 1 }),
-      номенклатура: belongsTo('i-i-s-probatri-номенклатура', 'Номенклатура', {
-        товар: attr('Товар', { index: 3, hidden: true })
-      }, { index: 2, displayMemberPath: 'товар' })
+      номенклатура: belongsTo('i-i-s-probatri-номенклатура', 'Товар', {
+        товар: attr('Товар', { index: 1, hidden: true }),
+        цена: attr('Цена', { index: 2 })
+      }, { index: 0, displayMemberPath: 'товар' }),
+      количество: attr('Количество', { index: 3 }),
+      сумма: attr('Сумма', { index: 4 })
     })
   });
 

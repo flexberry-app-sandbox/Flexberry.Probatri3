@@ -30,10 +30,11 @@ namespace IIS.Probatri
     [Caption("Расчет заказа")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("РасчетЗаказаE", new string[] {
+            "Номенклатура as \'Товар\'",
+            "Номенклатура.Товар as \'Товар\'",
+            "Номенклатура.Цена as \'Цена\'",
             "Количество as \'Количество\'",
-            "Сумма as \'Сумма\'",
-            "Номенклатура as \'Номенклатура\'",
-            "Номенклатура.Товар as \'Товар\'"}, Hidden=new string[] {
+            "Сумма as \'Сумма\'"}, Hidden=new string[] {
             "Номенклатура.Товар"})]
     [MasterViewDefineAttribute("РасчетЗаказаE", "Номенклатура", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Товар")]
     public class РасчетЗаказа : ICSSoft.STORMNET.DataObject
