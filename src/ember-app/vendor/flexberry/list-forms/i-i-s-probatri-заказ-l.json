@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-probatri-заказ-e",
+  "editForm": "i-i-s-probatri-заказ-e",
+  "external": false,
+  "caption": "Оформление заказов",
+  "name": "IISProbatriЗаказL",
+  "className": "ЗаказL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probatri-заказ",
+      "modelProjection": "ЗаказL"
+    }
+  ]
+}

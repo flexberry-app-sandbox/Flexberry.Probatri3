@@ -1,0 +1,66 @@
+﻿{
+  "applicationCaption": "Probatri",
+  "applicationTitle": "Probatri",
+  "items": [
+    {
+      "link": null,
+      "menuName": "заказы",
+      "caption": "Заказы",
+      "title": "Заказы",
+      "children": [
+        {
+          "link": null,
+          "menuName": "справочники",
+          "caption": "Справочники",
+          "title": "Справочники",
+          "children": [
+            {
+              "link": "i-i-s-probatri-контрагент-l",
+              "menuName": null,
+              "caption": "Контрагенты",
+              "title": "Контрагент",
+              "children": null
+            },
+            {
+              "link": "i-i-s-probatri-мастер-l",
+              "menuName": null,
+              "caption": "Мастера",
+              "title": "Мастер",
+              "children": null
+            },
+            {
+              "link": "i-i-s-probatri-номенклатура-l",
+              "menuName": null,
+              "caption": "Номенклатура",
+              "title": "Номенклатура",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "документация",
+          "caption": "Документация",
+          "title": "Документация",
+          "children": [
+            {
+              "link": "i-i-s-probatri-заказ-l",
+              "menuName": null,
+              "caption": "Оформление заказа",
+              "title": "Заказ",
+              "children": null
+            },
+            {
+              "link": "i-i-s-probatri-журнал-заказов-l",
+              "menuName": null,
+              "caption": "Журнал заказов",
+              "title": "Журнал заказов",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

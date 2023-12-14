@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Probatri.model.Kontragent</class>
+        <class>Probatri.model.ZHurnalZakazov</class>
+        <class>Probatri.model.Nomenklatura</class>
+        <class>Probatri.model.Zakaz</class>
+        <class>Probatri.model.Master</class>
+        <class>Probatri.model.RaschetZakaza</class>
+        <class>Probatri.model.FlexberryAdvLimit</class>
+        <class>Probatri.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Probatri.model.NewPlatformFlexberryServicesLock</class>
+        <class>Probatri.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

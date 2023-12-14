@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-probatri-журнал-заказов-e",
+  "editForm": "i-i-s-probatri-журнал-заказов-e",
+  "external": false,
+  "caption": "Журнал заказов",
+  "name": "IISProbatriЖурналЗаказовL",
+  "className": "ЖурналЗаказовL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probatri-журнал-заказов",
+      "modelProjection": "ЖурналЗаказовL"
+    }
+  ]
+}

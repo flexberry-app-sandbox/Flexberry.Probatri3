@@ -1,0 +1,53 @@
+import Mixin from '@ember/object/mixin';
+import $ from 'jquery';
+import DS from 'ember-data';
+import { validator } from 'ember-cp-validations';
+import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes';
+
+export let Model = Mixin.create({
+  количество: DS.attr('number'),
+  сумма: DS.attr('decimal'),
+  номенклатура: DS.belongsTo('i-i-s-probatri-номенклатура', { inverse: null, async: false }),
+  заказ: DS.belongsTo('i-i-s-probatri-заказ', { inverse: 'расчетЗаказа', async: false })
+});
+
+export let ValidationRules = {
+  количество: {
+    descriptionKey: 'models.i-i-s-probatri-расчет-заказа.validations.количество.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('number', { allowString: true, allowBlank: true, integer: true }),
+    ],
+  },
+  сумма: {
+    descriptionKey: 'models.i-i-s-probatri-расчет-заказа.validations.сумма.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('number', { allowString: true, allowBlank: true }),
+    ],
+  },
+  номенклатура: {
+    descriptionKey: 'models.i-i-s-probatri-расчет-заказа.validations.номенклатура.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
+    ],
+  },
+  заказ: {
+    descriptionKey: 'models.i-i-s-probatri-расчет-заказа.validations.заказ.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
+    ],
+  },
+};
+
+export let defineProjections = function (modelClass) {
+  modelClass.defineProjection('РасчетЗаказаE', 'i-i-s-probatri-расчет-заказа', {
+    количество: attr('Количество', { index: 0 }),
+    сумма: attr('Сумма', { index: 1 }),
+    номенклатура: belongsTo('i-i-s-probatri-номенклатура', 'Номенклатура', {
+      товар: attr('Товар', { index: 3, hidden: true })
+    }, { index: 2, displayMemberPath: 'товар' })
+  });
+};

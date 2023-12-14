@@ -1,0 +1,1 @@
+docker-compose -p probatri-java up -d

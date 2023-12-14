@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Заказ",
+      "projection": "ЗаказL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Журнал заказов",
+  "name": "IISProbatriЖурналЗаказовE",
+  "className": "ЖурналЗаказовE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-probatri-журнал-заказов",
+      "modelProjection": "ЖурналЗаказовE"
+    }
+  ]
+}
